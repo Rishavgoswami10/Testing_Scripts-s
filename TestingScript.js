@@ -15,11 +15,11 @@ export const options = {
   scenarios: {
     hourly_users: {
       executor: 'constant-arrival-rate',
-      rate: 17, // 17 users per minute
+      rate: 600, // 17 users per minute
       timeUnit: '1m',
-      duration: '40m', // Run for 40 minutes
+      duration: '1h', // Run for 40 minutes
       preAllocatedVUs: 700, // Allocate enough VUs for the test
-      maxVUs: 750, // Allow some buffer for unexpected load
+      maxVUs: 24500, // Allow some buffer for unexpected load
     },
   },
 };
